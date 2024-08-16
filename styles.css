@@ -12,10 +12,10 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 50px 20px; /* Adds some padding inside the section */
+    padding-top: 50px;
     color: white; /* Changes the text color to white for better contrast */
     text-align: center; /* Centers the text */
-    margin: 0;
+    
 }
 
 
@@ -30,6 +30,17 @@ header {
     width: 600px; /* Adjust size as needed */
     height: auto;
     margin-right: 15px; /* Space between logo and title */
+}
+.arrow {
+    text-align: end;
+    text-align: center;
+    margin-bottom: 0; /* Ensures no margin at the bottom of the .arrow container */
+    text-align: center; /* Optional: Center the text and arrow */
+
+}
+.arrow p {
+    margin: 0; /* Removes all margins from the paragraphs */
+    padding: 0; /* Removes any padding if present */
 }
 
 h1 {
@@ -65,20 +76,22 @@ nav a:hover {
 }
 
 
-
 section {
    
     text-align: center;
 }
 
-h2 {
-    font-size: 1.5rem;
-    margin: 1;
-}
+
 #destinations {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+#destinations h2 {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px; /* Adjust the spacing as needed */
+    text-align: center;  /* Center the title if desired */
 }
 
 .destination {
@@ -91,6 +104,7 @@ h2 {
     width: 100%;
     height: auto;
 }
+
 
 form {
     max-width: 600px;
@@ -112,7 +126,7 @@ form input, form textarea {
 form button {
     display: block;
     margin: 5em 0;
-    padding: 0.5em 1em;
+    padding: 1em 2em;
     background-color: #000000;
     color: white;
     border: none;
